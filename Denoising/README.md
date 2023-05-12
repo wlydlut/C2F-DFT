@@ -45,7 +45,7 @@
 
     ```
     cd URDT-main
-    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Denoising/Options/RealDenoising_URDT_Coarse.yml  --launcher pytorch
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Denoising/Options/RealDenoising_URDT_Fine.yml  --launcher pytorch
     ```
 
 ## Testing
