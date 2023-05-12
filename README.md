@@ -31,8 +31,8 @@ Training and Testing instructions for Image Deraining, Image Motion Deblurring, 
 <table>
   <tr>
     <th align="center">Task</th>
-    <th align="center">Training Instructions</th>
-    <th align="center">Testing Instructions</th>
+    <th align="center">Training</th>
+    <th align="center">Testing</th>
     <th align="center">URDT's Visual Results</th>
   </tr>
   <tr>
