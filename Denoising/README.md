@@ -57,7 +57,7 @@
 - To obtain denoised results, run
     ```
     cd Denoising
-    python test_real_denoising_sidd.py --save_images
+    python test_real_denoising_sidd.py
     ```
 
 - To reproduce PSNR/SSIM scores on SIDD data, run
@@ -69,7 +69,7 @@
 
 - To obtain denoised results, run
 ```
-python test_real_denoising_dnd.py --save_images
+python test_real_denoising_dnd.py 
 ```
 
 - To reproduce PSNR/SSIM scores, upload the results to the DND benchmark website.
