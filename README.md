@@ -66,7 +66,7 @@ Training and Testing instructions for Image Deraining, Image Motion Deblurring, 
 </details>
 
 <details>
-<summary><strong>Single-Image Motion Deblurring</strong> (click to expand) </summary>
+<summary><strong>Image Motion Deblurring</strong> (click to expand) </summary>
 
 <p align="center"><img src = "https://github.com/wlydlut/URDT-main/blob/main/Figs/tab2.png#pic_center" width="500"></p>
 <p align="center"><img src = "https://github.com/wlydlut/URDT-main/blob/main/Figs/fig4.png#pic_center" width="1000"></p>
