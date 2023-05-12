@@ -1,5 +1,5 @@
 # general settings
-name: RealDenoising_DTAR_Fine
+name: RealDenoising_URDT_Coarse
 model_type: ImageCleanModel
 scale: 1
 num_gpu: 2  # set num_gpu: 0 for cpu mode
@@ -10,7 +10,6 @@ datasets:
   train:
     name: TrainSet
     type: Dataset_PairedImage
-
     dataroot_gt: ./Denoising/Datasets/train/target_crops
     dataroot_lq: ./Denoising/Datasets/train/input_crops
     geometric_augs: true
@@ -49,7 +48,6 @@ datasets:
     gt_size: 128
     patch_n: 1
 
-
 # network structures
 network_g:
   type: DT
@@ -63,10 +61,8 @@ network_g:
   LayerNorm_type: BiasFree
   dual_pixel_task: False
 
-
 # path
 path:
-
   pretrain_network_g: ./Denoising/pretrained_models/net_g_denoised_coarse.pth
   strict_load_g: true
   param_key_g: params_ema
@@ -75,7 +71,7 @@ path:
 # training settings
 train:
   ema_decay: 0.999
-  total_iter: 60000
+  total_iter: 90000
   warmup_iter: -1 # no warm up
   use_grad_clip: False
 
@@ -107,7 +103,6 @@ train:
 
 # validation settings
 val:
-
   val_freq: 1000
   save_img: true
   rgb2bgr: true
@@ -118,8 +113,6 @@ val:
       type: calculate_psnr
       crop_border: 0
       test_y_channel: false
-
-
 # logging settings
 logger:
   print_freq: 1000
