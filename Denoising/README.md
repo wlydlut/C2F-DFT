@@ -72,4 +72,4 @@
 python test_real_denoising_dnd.py 
 ```
 
-- To reproduce PSNR/SSIM scores, upload the results to the DND benchmark website.
+- To reproduce PSNR/SSIM scores, upload the results to the DND benchmark [website](https://noise.visinf.tu-darmstadt.de/).
