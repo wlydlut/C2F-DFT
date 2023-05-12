@@ -28,14 +28,14 @@
   
 ## Training
 
-1. To train URDT in the coarse training pipeline, run
+1. To train URDT in the coarse training pipeline, modify the comments on lines 129-134 and 195-237 in the /basicsr/models/image_restoration_model.py file, then run
 
     ```
     cd URDT-main
     python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_URDT_Coarse.yml  --launcher pytorch
     ```
 
-2. To train URDT in the fine training pipeline, run
+2. To train URDT in the fine training pipeline, modify the comments on lines 137-145 and 240-286 in the /basicsr/models/image_restoration_model.py file, then run
 
     ```
     cd URDT-main
