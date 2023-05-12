@@ -26,7 +26,7 @@
 
 ## Training and Evaluation（The training code is being updated.）
 
-Training and Testing instructions for Image Deraining, Image Motion Deblurring, and Real Image Denoising are provided in their respective directories. Here is a summary table containing hyperlinks for easy navigation:
+Training and testing instructions and visualization results for Image Deraining, Image Motion Deblurring, and Real Image Denoising are provied in the links below. 
 
 <table>
   <tr>
