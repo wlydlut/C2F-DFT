@@ -6,7 +6,7 @@
 
 -Val dataset: To accelerate the training speed, we selected the first image from the Rain100L test set as the validation set.
 
-- For training and testing, your directory structure should look like this
+- The above dataset path is as follows
   
  `Deraining/Datasets` <br/>
  `├──train`  <br/>
