@@ -38,14 +38,14 @@
 
     ```
     cd URDT-main
-    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Denoising/Options/Denoising_URDT_Coarse.yml  --launcher pytorch
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt RealDenoising/Options/Denoising_URDT_Coarse.yml  --launcher pytorch
     ```
 
 2. To train URDT in the fine training pipeline, modify the comments on lines 137-145 and 240-286 in the /basicsr/models/image_restoration_model.py file, then run
 
     ```
     cd URDT-main
-    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Denoising/Options/Denoising_URDT_Fine.yml  --launcher pytorch
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt RealDenoising/Options/Denoising_URDT_Fine.yml  --launcher pytorch
     ```
 
 ## Testing
