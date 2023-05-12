@@ -48,7 +48,7 @@ Training and Testing instructions for Image Deraining, Image Motion Deblurring, 
     <td align="center"><a href="https://drive.google.com/drive/folders/1qYVPblP0kCyfIoxDQ2NBsdbv_MoZ24S4">Download</a></td>
   </tr>
   <tr>
-     <td align="center">Real ImageDenoising</td>
+     <td align="center">Real Image Denoising</td>
     <td align="center"><a href="Denoising/README.md#Training">Link</a></td>
     <td align="center"><a href="Denoising/README.md#Testing">Link</a></td>
     <td align="center"><a href="https://drive.google.com/drive/folders/1hgSYcwSLktFh42LA9bDXTLUuNzThdJVA">Download</a></td>
