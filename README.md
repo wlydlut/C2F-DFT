@@ -37,20 +37,20 @@ Training and testing instructions and visualization results for Image Deraining,
   </tr>
   <tr>
     <td align="center">Image Deraining</td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Deraining/README.md#training">Link</a></td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Deraining/README.md#testing">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Deraining/README.md#Training">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Deraining/README.md#Testing">Link</a></td>
     <td align="center"><a href="https://drive.google.com/drive/folders/1v4aAFDAojHtedtRmPcqVKJcAixW5dZ8m">Download</a></td>
   </tr>
   <tr>
     <td align="center">Image Motion Deblurring</td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Motion_Deblurring#training">Link</a></td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Motion_Deblurring#testing">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Motion_Deblurring/README.md#training">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Motion_Deblurring/README.md#testing">Link</a></td>
     <td align="center"><a href="https://drive.google.com/drive/folders/1qYVPblP0kCyfIoxDQ2NBsdbv_MoZ24S4">Download</a></td>
   </tr>
   <tr>
      <td align="center">Real Image Denoising</td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Denoising#training">Link</a></td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Denoising#testing">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Denoising/README.md#training">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Denoising/README.md#testing">Link</a></td>
     <td align="center"><a href="https://drive.google.com/drive/folders/1hgSYcwSLktFh42LA9bDXTLUuNzThdJVA">Download</a></td>
   </tr>
 </table>
