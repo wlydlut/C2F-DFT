@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/data/yqy/wly/URDT_main/")
+sys.path.append("/data/URDT_main/")
 
 import argparse
 import datetime
@@ -246,7 +246,7 @@ def main():
             # update learning rate
             model.update_learning_rate(current_iter, warmup_iter=opt['train'].get('warmup_iter', -1))
 
-            ### ------Progressive learning ---------------------
+            ### ------patch-cycle learning ---------------------
             j = ((current_iter > groups) != True).nonzero()[0]
             if len(j) == 0:
                 bs_j = len(groups) - 1

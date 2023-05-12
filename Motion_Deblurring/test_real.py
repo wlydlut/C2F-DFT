@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/data/yqy/wly/URDT_main/")
+sys.path.append("/data/URDT_main/")
 
 import numpy as np
 import argparse

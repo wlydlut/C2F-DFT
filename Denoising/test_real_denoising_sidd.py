@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("/data/yqy/wly/URDT_main/")
+sys.path.append("/data/URDT_main/")
 
 import numpy as np
 import argparse
@@ -15,7 +15,7 @@ from skimage import img_as_ubyte
 from basicsr.utils import set_random_seed
 import scipy.io as sio
 import os
-# os.environ["CUDA_VISIBLE_DEVICES"]='1'
+# os.environ["CUDA_VISIBLE_DEVICES"]='0'
 
 
 def overlapping_grid_indices(x_cond):
