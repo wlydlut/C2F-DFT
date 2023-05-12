@@ -98,7 +98,7 @@ train:
 
   # losses
   pixel_opt1:
-      type: MS_SSIM
+    type: MS_SSIM
 
   pixel_opt2:
     type: L1Loss
