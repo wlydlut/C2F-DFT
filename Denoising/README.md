@@ -11,7 +11,7 @@
   python generate_patches_sidd.py 
   ```
 
-- For training and testing, your directory structure should look like this
+- The above dataset path is as follows
     
 `Denoising/Datasets` <br/>
  `├──train`  <br/>
