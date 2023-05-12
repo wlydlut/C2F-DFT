@@ -1,0 +1,75 @@
+## Datasets
+
+-Train datasets: [GoPro](https://drive.google.com/file/d/1zgALzrLCC_tcXKu_iHQTHukKUVT1aodI/view?usp=sharing)
+
+-Test datasets:  [GoPro](https://drive.google.com/file/d/1k6DTSHu4saUgrGTYkkZXTptILyG9RRll/view?usp=sharing), [RealBlur_R](https://drive.google.com/file/d/1glgeWXCy7Y0qWDc0MXBTUlZYJf8984hS/view?usp=sharing), [RealBlur_J](https://drive.google.com/file/d/1Rb1DhhXmX7IXfilQ-zL9aGjQfAAvQTrW/view?usp=sharing)
+
+-Val dataset: To accelerate the training speed, we selected the first image from the GoPro test set as the validation set.
+
+- For training and testing, your directory structure should look like this
+    
+ `Motion_Deblurring/Datasets` <br/>
+ `├──train`  <br/>
+          `├──input`   <br/>
+          `└──target`   <br/>
+ `├──val`  <br/>
+          `├──input`   <br/>
+          `└──gt`   <br/>
+ `└──test`  <br/>
+     `├──GoPro`   <br/>
+          `├──input`   <br/>
+          `└──target`   <br/>
+     `├──RealBlur_J`  <br/>
+          `├──input`   <br/>
+          `└──target`   <br/>
+     `└──RealBlur_R` <br/>
+          `├──input`   <br/>
+          `└──target`  <br/>
+  
+## Training
+
+1. To train URDT in the coarse training pipeline, run
+
+    ```
+    cd URDT-main
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_URDT_Coarse.yml  --launcher pytorch
+    ```
+
+2. To train URDT in the fine training pipeline, run
+
+    ```
+    cd URDT-main
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_URDT_Fine.yml  --launcher pytorch
+    ```
+
+## Testing
+
+1. Download the pre-trained [model](https://drive.google.com/drive/folders/1Xr6SigGj8AdvwSapqxfWWtRDU7KTPMem) and place it in `./pretrained_models/`
+
+2. Testing
+
+    #### Testing on GoPro dataset, run
+
+    ```
+    cd Motion_Deblurring
+    python test.py
+    ```
+    #### Testing on RealBlur dataset, run
+
+    ```
+    cd Motion_Deblurring
+    python test_real.py
+    ```
+
+3. Calculating PSNR/SSIM scores
+
+    #### Calculate GoPro dataset, run
+
+    ```
+    python calculate_psnr_ssim.py
+    ```
+    #### Calculate RealBlur dataset, run
+
+    ```
+    python evaluate_realblur.py
+    ```
