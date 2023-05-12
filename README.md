@@ -84,5 +84,5 @@ Training and Testing instructions for Image Deraining, Image Motion Deblurring, 
 <!Should you have any questions, please contact wangliyan@mail.dlut.edu.cn >
 
 
-**Acknowledgment:** This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [Restormer](https://github.com/swz30/Restormer). 
+**Acknowledgment:** This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [Restormer](https://github.com/swz30/Restormer), [WeatherDiffusion](https://github.com/IGITUGraz/WeatherDiffusion). 
 
