@@ -18,7 +18,7 @@
 
 ## Requirements
 - CUDA 10.1 (or later)
-- Python 3.7 (or later)
+- Python 3.9 (or later)
 - Pytorch 1.8.1 (or later)
 - Torchvision 0.19
 - OpenCV 4.7.0
