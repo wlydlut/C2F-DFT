@@ -49,8 +49,8 @@ Training and testing instructions and visualization results for Image Deraining,
   </tr>
   <tr>
      <td align="center">Real Image Denoising</td>
-    <td align="center"><a href="Denoising/README.md#Training">Link</a></td>
-    <td align="center"><a href="Denoising/README.md#Testing">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/blob/main/Denoising/README.md#Training">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/blob/main/Denoising/README.md#testing">Link</a></td>
     <td align="center"><a href="https://drive.google.com/drive/folders/1hgSYcwSLktFh42LA9bDXTLUuNzThdJVA">Download</a></td>
   </tr>
 </table>
