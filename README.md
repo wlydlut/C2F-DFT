@@ -37,8 +37,8 @@ Training and testing instructions and visualization results for Image Deraining,
   </tr>
   <tr>
     <td align="center">Image Deraining</td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Deraining/README.md#Training">Link</a></td>
-    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Deraining/README.md#Testing">Link</a></td>
+    <td align="center"><a href="Deraining/README.md#training">Link</a></td>
+    <td align="center"><a href="https://github.com/wlydlut/URDT-main/tree/main/Deraining/README.md#testing">Link</a></td>
     <td align="center"><a href="https://drive.google.com/drive/folders/1v4aAFDAojHtedtRmPcqVKJcAixW5dZ8m">Download</a></td>
   </tr>
   <tr>
