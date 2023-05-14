@@ -3,9 +3,6 @@
 # Unlimited-Resolution Diffusion Transformer: A Patch-Cycle Diffusion Model for Progressive Image Restoration
 <!By Liyan Wang, Qinyu Yang, Bo Fu, Ximing Li, and Zhixun Su> 
 
-<! *Single image restoration (IR) methods trained on synthetic data generalize poorly to complex and diverse real data. Recently, diffusion models (DM) have achieved state-of-the-art performance by gradually generating high-quality and diverse data samples with fixed resolution from noisy data, but it is impractical to apply to the IR problems of arbitrary resolution. Our main proposal is to create a progressive restoration process based on DM, to achieve high-quality restoration of any resolution degraded images. Therefore, we propose a novel Unlimited-Resolution Diffusion Transformer (URDT) for progressive IR. Specifically, our URDT owns a coarse-to-fine training pipeline. The coarse training pipeline adopts the training manner of the conditional diffusion model to train the model, while the fine training pipeline further trains by selecting few sampling steps to construct a progressive restoration process. Moreover, the noise estimation network of our URDT is designed as a novel Transformer-based U-shape architecture named DT, which processes unlimited-resolution images by redesigning Diffusion Transformer Blocks (DTBs) with time embedding and Multi-Dconv Head Transposed Attention (MDTA). In this case, a patch-cycle diffusion training strategy is designed to make DT more conducive to adapting different image resolutions. Extensive experiments show that the proposed URDT demonstrates strong generalization capabilities on benchmark datasets for image deraining, image motion deblurring, and real image denoising. By leveraging the advantages of diffusion models, URDT offers a promising new approach to image restoration tasks.* >
-<hr />
-
 # Updating!!!
 
 ## Coarse Training Pipeline and DT Network
