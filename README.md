@@ -21,7 +21,7 @@
 - OpenCV 4.7.0
 - tensorboard, skimage, scipy, lmdb, tqdm, yaml, einops, natsort
 
-## Training and Evaluation（The training code is being updated.）
+## Training and Evaluation
 
 Training and testing instructions and visualization results for Image Deraining, Image Motion Deblurring, and Real Image Denoising are provied in the links below. 
 
