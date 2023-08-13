@@ -1,6 +1,6 @@
 
 # URDT
-# Unlimited-Resolution Diffusion Transformer: A Patch-Cycle Diffusion Model for Progressive Image Restoration
+# 
 <!By Liyan Wang, Qinyu Yang, Bo Fu, Ximing Li, and Zhixun Su> 
 
 # Updating!!!
