@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/data/URDT_main/")
+sys.path.append("/data/C2F-DFT/")
 
 import numpy as np
 import argparse
@@ -10,7 +10,7 @@ import utils
 from natsort import natsorted
 from glob import glob
 
-from basicsr.models.archs.DT_arch import DT
+from basicsr.models.archs.DFT_arch import DFT
 from skimage import img_as_ubyte
 import os
 # os.environ["CUDA_VISIBLE_DEVICES"]='0'
@@ -84,7 +84,7 @@ def generalized_steps_overlapping(input_, model_restoration, device, betas, seq,
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Image Deraining using URDT')
+    parser = argparse.ArgumentParser(description='Image Deraining using C2F-DFT')
 
     parser.add_argument('--input_dir', default='./Datasets/test/', type=str, help='Directory of validation images')
 
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     ####### Load yaml #######
-    yaml_file = 'Options/Deblurring_URDT_Fine.yml'
+    yaml_file = 'Options/Deblurring_C2F-DFT_Fine.yml'
     import yaml
 
     try:
@@ -105,7 +105,7 @@ if __name__ == '__main__':
     opt = yaml.load(open(yaml_file, mode='r'), Loader=Loader)
     device = torch.device('cuda' if opt['num_gpu'] != 0 else 'cpu')
     s = opt['network_g'].pop('type')
-    model_restoration = DT(**opt['network_g'])
+    model_restoration = DFT(**opt['network_g'])
 
     checkpoint = torch.load(args.weights)
     model_restoration.load_state_dict(checkpoint['params_ema'])
