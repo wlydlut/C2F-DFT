@@ -1,11 +1,11 @@
 
-# URDT
+# C2F-DFT
 # 
-<!By Liyan Wang, Qinyu Yang, Bo Fu, Ximing Li, and Zhixun Su> 
+By Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, Jinshan Pan, and Zhixun Su
 
 # Updating!!!
 
-## Coarse Training Pipeline and DT Network
+## Coarse Training Pipeline of Diffusion Transformer Model (DFT).
 
 <img src = "https://github.com/wlydlut/URDT-main/blob/main/Figs/fig1.png#pic_center"> 
 
