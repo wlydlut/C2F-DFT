@@ -21,7 +21,7 @@
 
 ## Training and Evaluation
 
-Training and testing instructions and visualization results for Image Deraining, Image Motion Deblurring, and Real Image Denoising are provied in the links below. 
+Training and testing instructions and visualization results for Image Deraining, Image Deblurring, and Real Image Denoising are provied in the links below. 
 
 <table>
   <tr>
@@ -37,9 +37,9 @@ Training and testing instructions and visualization results for Image Deraining,
     <td align="center"><a href="https://drive.google.com/drive/folders/1v4aAFDAojHtedtRmPcqVKJcAixW5dZ8m">Download</a></td>
   </tr>
   <tr>
-    <td align="center">Image Motion Deblurring</td>
-    <td align="center"><a href="Motion_Deblurring/README.md#training">Link</a></td>
-    <td align="center"><a href="Motion_Deblurring/README.md#testing">Link</a></td>
+    <td align="center">Image Deblurring</td>
+    <td align="center"><a href="Deblurring/README.md#training">Link</a></td>
+    <td align="center"><a href="Deblurring/README.md#testing">Link</a></td>
     <td align="center"><a href="https://drive.google.com/drive/folders/1qYVPblP0kCyfIoxDQ2NBsdbv_MoZ24S4">Download</a></td>
   </tr>
   <tr>
@@ -61,7 +61,7 @@ Training and testing instructions and visualization results for Image Deraining,
 </details>
 
 <details>
-<summary><strong>Image Motion Deblurring</strong> (click to expand) </summary>
+<summary><strong>Image Deblurring</strong> (click to expand) </summary>
 
 <p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/tab2.png#pic_center" width="500"></p>
 <p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig4.png#pic_center" width="1000"></p>
