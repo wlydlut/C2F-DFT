@@ -224,8 +224,8 @@ class MySequential(nn.Sequential):
                 inputs = module(inputs)
         return inputs
 
-#####################################Diffusion Transformer DT################################
-class DT(nn.Module):
+#####################################Diffusion Transformer DFT################################
+class DFT(nn.Module):
     def __init__(self,
                  inp_channels=6,
                  out_channels=3,
@@ -238,7 +238,7 @@ class DT(nn.Module):
                  dual_pixel_task=False
                  ):
 
-        super(DT, self).__init__()
+        super(DFT, self).__init__()
         self.patch_embed = OverlapPatchEmbed(inp_channels, dim)
 
         self.encoder_level1 = MySequential(*[
@@ -330,7 +330,7 @@ class DT(nn.Module):
 #     x = torch.rand(1, 6, 32, 32)
 #     t = torch.tensor([1])
 #     print(x.shape)
-#     model = DT()
+#     model = DFT()
 #     # print(model)
 #     y = model(x, t)
 #     print(y.shape)
