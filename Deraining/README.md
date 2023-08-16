@@ -51,6 +51,7 @@ First, modify the path where the project is located in the second line of the /b
 1. Download the pre-trained [model](https://drive.google.com/drive/folders/18dVkwv9WUBXMaCLtsuzA4TYURDtW_DxG) and place it in `./pretrained_models/`
 
 2. Testing
+
    Modify the path where the project is located in the second line of the Deraining/test.py file
     ```
     cd Deraining
