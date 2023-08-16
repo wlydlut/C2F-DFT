@@ -30,6 +30,8 @@
           `└──target` 
 ## Training
 
+First, modify the path on line 2 in the /basicsr/train.py file.
+
 1. To train C2F-DFT in the coarse training pipeline, modify the comments on lines 129-134 and 195-237 in the /basicsr/models/image_restoration_model.py file, then run
 
     ```
