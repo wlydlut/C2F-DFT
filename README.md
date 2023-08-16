@@ -7,7 +7,7 @@
 
 ## Coarse Training Pipeline of Diffusion Transformer Model (DFT)
 
-<img src = "[https://github.com/wlydlut/C2F-DFT/tree/main/Figs/fig1.png](https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig1.png)#pic_center">  
+<img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig1.png#pic_center">  
 
 ## Fine Training Pipeline and Sampling
 
