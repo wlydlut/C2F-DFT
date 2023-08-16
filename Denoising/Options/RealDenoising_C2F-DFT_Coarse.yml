@@ -59,7 +59,7 @@ network_g:
   heads: [1,2,4,8]
   ffn_factor: 4.0
   bias: False
-  LayerNorm_type: WithBias 
+  LayerNorm_type: BiasFree 
   dual_pixel_task: False
 
 # path
