@@ -49,7 +49,7 @@ First, modify the path where the project is located in the second line of the /b
 
 2. Testing
    
-   Modify the path where the project is located in the second line of the Deraining/test.py file
+   Modify the path where the project is located in the second line of the Deblurring/test.py file
 
     #### Testing on GoPro dataset, run
 
