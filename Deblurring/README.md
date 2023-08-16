@@ -8,7 +8,7 @@
 
 - The above dataset path is as follows
     
- `Motion_Deblurring/Datasets` <br/>
+ `Deblurring/Datasets` <br/>
  `├──train`  <br/>
           `├──input`   <br/>
           `└──target`   <br/>
@@ -33,14 +33,14 @@ First, modify the path where the project is located in the second line of the /b
 
     ```
     cd C2F-DFT-main
-    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_C2F-DFT_Coarse.yml  --launcher pytorch
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Deblurring/Options/Deblurring_C2F-DFT_Coarse.yml  --launcher pytorch
     ```
 
 2. To train C2F-DFT in the fine training pipeline, modify the comments on lines 137-145 and 240-286 in the /basicsr/models/image_restoration_model.py file, then run
 
     ```
     cd C2F-DFT-main
-    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_C2F-DFT_Fine.yml  --launcher pytorch
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Deblurring/Options/Deblurring_C2F-DFT_Fine.yml  --launcher pytorch
     ```
 
 ## Testing
@@ -54,13 +54,13 @@ First, modify the path where the project is located in the second line of the /b
     #### Testing on GoPro dataset, run
 
     ```
-    cd Motion_Deblurring
+    cd Deblurring
     python test.py
     ```
     #### Testing on RealBlur dataset, run
 
     ```
-    cd Motion_Deblurring
+    cd Deblurring
     python test_real.py
     ```
 
