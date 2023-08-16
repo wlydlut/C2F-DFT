@@ -1,7 +1,7 @@
 
 # C2F-DFT
 # 
-By Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, Jinshan Pan, and Zhixun Su
+<!By Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, Jinshan Pan, and Zhixun Su>
 
 # Updating!!!
 
