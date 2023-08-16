@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/data/URDT_main/")
+sys.path.append("/data/C2F-DFT/")
 
 import argparse
 import datetime
