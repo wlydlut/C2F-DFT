@@ -27,6 +27,7 @@
           `└──target`  <br/>
   
 ## Training
+First, modify the path where the project is located in the second line of the /basicsr/train.py file.
 
 1. To train C2F-DFT in the coarse training pipeline, modify the comments on lines 129-134 and 195-237 in the /basicsr/models/image_restoration_model.py file, then run
 
@@ -47,6 +48,8 @@
 1. Download the pre-trained [model](https://drive.google.com/drive/folders/1Xr6SigGj8AdvwSapqxfWWtRDU7KTPMem) and place it in `./pretrained_models/`
 
 2. Testing
+   
+   Modify the path where the project is located in the second line of the Deraining/test.py file
 
     #### Testing on GoPro dataset, run
 
@@ -61,7 +64,7 @@
     python test_real.py
     ```
 
-3. Calculating PSNR/SSIM scores
+5. Calculating PSNR/SSIM scores
 
     #### Calculate GoPro dataset, run
 
