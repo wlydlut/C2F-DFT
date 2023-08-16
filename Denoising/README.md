@@ -33,6 +33,7 @@
                `└──0050.mat` 
 
 ## Training
+First, modify the path where the project is located in the second line of the /basicsr/train.py file.
 
 1. To train C2F-DFT in the coarse training pipeline, modify the comments on lines 129-134 and 195-237 in the /basicsr/models/image_restoration_model.py file, then run
 
@@ -54,6 +55,8 @@
 
 #### Testing on SIDD dataset
 
+Modify the path where the project is located in the second line of the Denoising/test_real_denoising_sidd.py file
+
 - To obtain denoised results, run
     ```
     cd Denoising
@@ -66,6 +69,8 @@
     ```
 
 #### Testing on DND dataset
+
+Modify the path where the project is located in the second line of the Denoising/test_real_denoising_dnd.py file
 
 - To obtain denoised results, run
 ```
