@@ -1,6 +1,6 @@
 
 # C2F-DFT
-# 
+# Learning A Coarse-to-Fine Diffusion Transformer for Image Restoration
 <!By Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, Jinshan Pan, and Zhixun Su>
 
 # Updating!!!
@@ -11,7 +11,7 @@
 
 ## Fine Training Pipeline and Sampling
 
-<img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/fig2.png#pic_center"> 
+<img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig2.png#pic_center"> 
 
 ## Requirements
 - CUDA 10.1 (or later)
@@ -57,24 +57,24 @@ Training and testing instructions and visualization results for Image Deraining,
 <details>
 <summary><strong>Image Deraining</strong> (click to expand) </summary>
 
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/tab1.png#pic_center"></p> 
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/fig3.png#pic_center" width="1000"></p> 
+<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/tab1.png#pic_center"></p> 
+<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig3.png#pic_center" width="1000"></p> 
 
 </details>
 
 <details>
 <summary><strong>Image Motion Deblurring</strong> (click to expand) </summary>
 
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/tab2.png#pic_center" width="500"></p>
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/fig4.png#pic_center" width="1000"></p>
+<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/tab2.png#pic_center" width="500"></p>
+<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig4.png#pic_center" width="1000"></p>
 </details>
 
 <details>
 <summary><strong>Real Image Denoising</strong> (click to expand) </summary>
 
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/tab3.png#pic_center" width="500"></p>
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/fig5.png#pic_center" width="1000"></p>
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/tree/main/Figs/fig6.png#pic_center" width="1000"></p>
+<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/tab3.png#pic_center" width="500"></p>
+<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig5.png#pic_center" width="1000"></p>
+<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig6.png#pic_center" width="1000"></p>
 </details>
 
 ## Contact
