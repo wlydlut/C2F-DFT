@@ -50,7 +50,7 @@ datasets:
 
 # network structures
 network_g:
-  type: FDT
+  type: DFT
   inp_channels: 6
   out_channels: 3
   dim: 48
