@@ -28,18 +28,18 @@
   
 ## Training
 
-1. To train URDT in the coarse training pipeline, modify the comments on lines 129-134 and 195-237 in the /basicsr/models/image_restoration_model.py file, then run
+1. To train C2F-DFT in the coarse training pipeline, modify the comments on lines 129-134 and 195-237 in the /basicsr/models/image_restoration_model.py file, then run
 
     ```
-    cd URDT-main
-    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_URDT_Coarse.yml  --launcher pytorch
+    cd C2F-DFT-main
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_C2F-DFT_Coarse.yml  --launcher pytorch
     ```
 
-2. To train URDT in the fine training pipeline, modify the comments on lines 137-145 and 240-286 in the /basicsr/models/image_restoration_model.py file, then run
+2. To train C2F-DFT in the fine training pipeline, modify the comments on lines 137-145 and 240-286 in the /basicsr/models/image_restoration_model.py file, then run
 
     ```
-    cd URDT-main
-    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_URDT_Fine.yml  --launcher pytorch
+    cd C2F-DFT-main
+    python -m torch.distributed.launch --nproc_per_node=2 --master_port=4321 basicsr/train.py -opt Motion_Deblurring/Options/Deblurring_C2F-DFT_Fine.yml  --launcher pytorch
     ```
 
 ## Testing
