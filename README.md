@@ -1,6 +1,4 @@
-
-# C2F-DFT
-# Learning A Coarse-to-Fine Diffusion Transformer for Image Restoration
+# Learning A Coarse-to-Fine Diffusion Transformer for Image Restoration（C2F-DFT）
 <!By Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, Jinshan Pan, and Zhixun Su>
 
 # Updating!!!
@@ -9,7 +7,7 @@
 
 <img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig1.png#pic_center">  
 
-## Fine Training Pipeline and Sampling
+## Fine Training Pipeline and Sampling Phase
 
 <img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig2.png#pic_center"> 
 
@@ -30,7 +28,7 @@ Training and testing instructions and visualization results for Image Deraining,
     <th align="center">Task</th>
     <th align="center">Training</th>
     <th align="center">Testing</th>
-    <th align="center">URDT's Visual Results</th>
+    <th align="center">C2F-DFT's Visual Results</th>
   </tr>
   <tr>
     <td align="center">Image Deraining</td>
