@@ -1,0 +1,135 @@
+# general settings
+name: Deblurring_C2F-DFT_Coarse
+model_type: ImageCleanModel
+scale: 1
+num_gpu: 2  # set num_gpu: 0 for cpu mode
+manual_seed: 100
+
+# dataset and data loader settings
+datasets:
+  train:
+    name: TrainSet
+    type: Dataset_PairedImage
+
+    dataroot_gt: ./Deblurring/Datasets/train/target
+    dataroot_lq: ./Deblurring/Datasets/train/input
+    geometric_augs: true
+
+    filename_tmpl: '{}'
+    io_backend:
+      type: disk
+
+    # data loader
+    use_shuffle: true
+    num_worker_per_gpu: 8
+    batch_size_per_gpu: 96
+
+    ### ---------------------Patch-Cycle training--------------------------------------
+    mini_batch_sizes: [96,24,6]   # Batch size per gpu
+    iters: [10000]
+    gt_size: 256 # Max patch size for progressive training
+    gt_sizes: [64,128,256] # Patch sizes for progressive training.
+    patch_n: 1
+    nums: [9]
+    ### ------------------------------------------------------------
+
+    dataset_enlarge_ratio: 1
+    prefetch_mode: cuda
+    pin_memory: true
+
+  val:
+    name: ValSet
+    type: Dataset_PairedImage
+    dataroot_gt: ./Deblurring/Datasets/val/gt
+    dataroot_lq: ./Deblurring/Datasets/val/input
+    io_backend:
+      type: disk
+
+    gt_size: 128
+    patch_n: 1
+
+
+# network structures
+network_g:
+  type: DFT
+  inp_channels: 6
+  out_channels: 3
+  dim: 48
+  num_blocks: [4,6,6,8]
+  heads: [1,2,4,8]
+  ffn_factor: 4.0
+  bias: False
+  LayerNorm_type: WithBias
+  dual_pixel_task: False
+
+# path
+path:
+  pretrain_network_g: ~
+  strict_load_g: true
+  param_key_g: params_ema
+  resume_state: ~
+
+# training settings
+train:
+  ema_decay: 0.999
+  total_iter: 330000
+  warmup_iter: -1 # no warm up
+  use_grad_clip: False
+
+
+  scheduler:
+    type: CosineAnnealingRestartCyclicLR
+    periods: [50000, 280000]
+    restart_weights: [1,1]
+    eta_mins: [0.0003, 0.00001]
+
+  mixing_augs:
+    mixup: true
+    mixup_beta: 1.2
+    use_identity: true
+
+  optim_g:
+    type: AdamW
+    lr: !!float 3e-4
+    weight_decay: !!float 1e-4
+    betas: [0.9, 0.999]
+  
+  # losses
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 1
+    reduction: mean
+
+# validation settings
+val:
+  val_freq: 1000
+  save_img: true
+  rgb2bgr: true
+  use_image: true
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+
+# logging settings
+logger:
+  print_freq: 1000
+  save_checkpoint_freq: 5000
+  use_tb_logger: true
+  wandb:
+    project: ~
+    resume_id: ~
+
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29500
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+    sampling_timesteps: 3
