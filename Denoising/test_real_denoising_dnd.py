@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/data/URDT_main/")
+sys.path.append("/data/C2F-DFT/")
 
 import numpy as np
 import argparse
@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch
 import utils
 import h5py
-from basicsr.models.archs.DT_arch import DT
+from basicsr.models.archs.DFT_arch import DFT
 from skimage import img_as_ubyte
 from basicsr.utils import set_random_seed
 import scipy.io as sio
@@ -87,7 +87,7 @@ def generalized_steps_overlapping(input_, model_restoration, device, betas, seq,
 
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description='Real Image Denoising using URDT')
+    parser = argparse.ArgumentParser(description='Real Image Denoising using C2F-DFT')
 
     parser.add_argument('--input_dir', default='./Datasets/test/DND/', type=str, help='Directory of validation images')
 
@@ -101,7 +101,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     ####### Load yaml #######
-    yaml_file = 'Options/RealDenoising_URDT_Fine.yml'
+    yaml_file = 'Options/RealDenoising_C2F-DFT_Fine.yml'
     import yaml
 
     try:
@@ -125,7 +125,7 @@ if __name__ == '__main__':
         result_dir_png = os.path.join(args.result_dir, 'png')
         os.makedirs(result_dir_png, exist_ok=True)
 
-    model_restoration = DT(**opt['network_g'])
+    model_restoration = DFT(**opt['network_g'])
     checkpoint = torch.load(args.weights)
     model_restoration.load_state_dict(checkpoint['params'])
     print("===>Testing using weights: ", args.weights)
