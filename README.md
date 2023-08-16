@@ -72,7 +72,6 @@ Training and testing instructions and visualization results for Image Deraining,
 
 <p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/tab3.png#pic_center" width="500"></p>
 <p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig5.png#pic_center" width="1000"></p>
-<p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig6.png#pic_center" width="1000"></p>
 </details>
 
 ## Contact
