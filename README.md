@@ -11,7 +11,7 @@
 
 <img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig2.png#pic_center"> 
 -->
-
+ 
 ## Requirements
 - CUDA 10.1 (or later)
 - Python 3.9 (or later)
