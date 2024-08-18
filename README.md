@@ -1,7 +1,6 @@
-# Learning A Coarse-to-Fine Diffusion Transformer for Image Restoration（C2F-DFT）
-<!By Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, Jinshan Pan, and Zhixun Su>
+# Coarse-to-Fine Mechanisms Mitigate Diffusion Limitations on Image Restoration 
+Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, and Zhixun Su
 
-# Updating!!!
 <!--
 ## Coarse Training Pipeline of Diffusion Transformer Model (DFT)
 
