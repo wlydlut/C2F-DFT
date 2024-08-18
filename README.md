@@ -1,15 +1,15 @@
-# Coarse-to-Fine Mechanisms Mitigate Diffusion Limitations on Image Restoration 
+# Coarse-to-Fine Mechanisms Mitigate Diffusion Limitations on Image Restoration (C2F-DFT)
 Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, and Zhixun Su
 
-<!--
+
 ## Coarse Training Pipeline of Diffusion Transformer Model (DFT)
 
-<img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig1.png#pic_center">  
+<img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/coarse.png#pic_center">  
 
 ## Fine Training Pipeline and Sampling Phase
 
-<img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig2.png#pic_center"> 
--->
+<img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fine.png#pic_center"> 
+
  
 ## Requirements
 - CUDA 10.1 (or later)
