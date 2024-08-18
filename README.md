@@ -1,6 +1,7 @@
 # Coarse-to-Fine Mechanisms Mitigate Diffusion Limitations on Image Restoration (C2F-DFT)
 Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, and Zhixun Su*
 
+[2024-08-11] Our paper is accepted to Computer Vision and Image Understanding (CUIV).
 
 ## Coarse Training Pipeline of Diffusion Transformer Model (DFT)
 
@@ -10,8 +11,6 @@ Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, and Zhixun Su*
 
 <img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fine.png#pic_center"> 
 
-## Updates
-[2024-08-11] Our paper is accepted to Computer Vision and Image Understanding (CUIV).
  
 ## Requirements
 - CUDA 10.1 (or later)
@@ -76,9 +75,8 @@ Training and testing instructions and visualization results for Image Deraining,
 <p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig5.png#pic_center" width="1000"></p>
 </details>
 
-## Contact
-<!Should you have any questions, please contact wangliyan@mail.dlut.edu.cn >
 
 
-**Acknowledgment:** This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [Restormer](https://github.com/swz30/Restormer), [WeatherDiffusion](https://github.com/IGITUGraz/WeatherDiffusion). 
+## **Acknowledgment:** 
+This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [Restormer](https://github.com/swz30/Restormer), [WeatherDiffusion](https://github.com/IGITUGraz/WeatherDiffusion). 
 
