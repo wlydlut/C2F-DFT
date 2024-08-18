@@ -77,6 +77,6 @@ Training and testing instructions and visualization results for Image Deraining,
 
 
 
-## **Acknowledgment:** 
+## Acknowledgments 
 This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [Restormer](https://github.com/swz30/Restormer), [WeatherDiffusion](https://github.com/IGITUGraz/WeatherDiffusion). 
 
