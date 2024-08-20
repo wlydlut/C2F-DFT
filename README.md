@@ -75,7 +75,17 @@ Training and testing instructions and visualization results for Image Deraining,
 <p align="center"><img src = "https://github.com/wlydlut/C2F-DFT/blob/main/Figs/fig5.png#pic_center" width="1000"></p>
 </details>
 
-
+## Citation
+```
+@article{WANG2024104118,
+title = {Coarse-to-fine mechanisms mitigate diffusion limitations on image restoration},
+journal = {Computer Vision and Image Understanding},
+volume = {248},
+pages = {104118},
+year = {2024},
+issn = {1077-3142},
+}
+```
 
 ## Acknowledgments 
 This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [Restormer](https://github.com/swz30/Restormer), [WeatherDiffusion](https://github.com/IGITUGraz/WeatherDiffusion). 
