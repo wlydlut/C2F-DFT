@@ -1,7 +1,7 @@
 # Coarse-to-Fine Mechanisms Mitigate Diffusion Limitations on Image Restoration (C2F-DFT)
 Liyan Wang, Qinyu Yang, Cong Wang, Wei Wang, and Zhixun Su*
 
-[2024-08-11] Our paper is accepted to Computer Vision and Image Understanding (CUIV).
+[2024-08-11] Our paper is accepted to Computer Vision and Image Understanding (CVIU).
 
 ## Coarse Training Pipeline of Diffusion Transformer Model (DFT)
 
